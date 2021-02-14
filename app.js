@@ -150,4 +150,5 @@ triggerBtnEnter(document.getElementById('duration'), sliderBtn)
 const loadingSpinner = () => {
   document.getElementById('loading-spinner').classList.toggle('d-none')
   gallery.classList.toggle('d-none')
+  document.querySelector('.images').classList.toggle('d-none')
 }
