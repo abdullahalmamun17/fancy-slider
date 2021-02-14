@@ -73,7 +73,7 @@ const createSlider = () => {
     return;
   }
   let duration = document.getElementById('duration').value || 1000;
-  if (duration < 1000) {
+  if (isNaN(duration) || duration < 1000) {
     // alert('Duration cannot be negative')
     duration = 1000
   }
